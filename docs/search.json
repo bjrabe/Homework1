@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "quarto.hw1.html",
+    "href": "quarto.hw1.html",
+    "title": "Data Science Reflections and Practice",
+    "section": "",
+    "text": "-I think that being a data scientist is about taking data in various forms and using methods from computer science and statistics to structure and analyze the data to provide insights into the data-generating process under study.\n-Both data scientists and statisticians analyze data using a variety of tools to try to draw conclusions about the data-generating process under study. I think of data science as “statistics plus.” Data scientists need to use the methods of statistics for analyzing data, but data scientists also work with messy data that come in a lot of different forms. This requires extra facility with computer science to transform data into forms that can be analyzed with traditional statistical methods. I also think data science is more closely associated with some methods which didn’t clearly originate from classical statistics, such as data mining and machine learning, though lots of folks in statistics training pathways have the option of learning and specializing in these topics in the present day.\n-I view myself as having more of a statistics focus. My interest in statistics developed from my career in medicine. Medicine does have a lot of structured data, so it is one of the domains where classical statistics plays an important role and hasn’t necessarily been incorporated under the data science umbrella. I also have more interest in the mathematical theory of data analysis methods than the practical aspects of working with massive (and possibly unstructured) data sets."
+  },
+  {
+    "objectID": "quarto.hw1.html#reflections-on-data-science",
+    "href": "quarto.hw1.html#reflections-on-data-science",
+    "title": "Data Science Reflections and Practice",
+    "section": "",
+    "text": "-I think that being a data scientist is about taking data in various forms and using methods from computer science and statistics to structure and analyze the data to provide insights into the data-generating process under study.\n-Both data scientists and statisticians analyze data using a variety of tools to try to draw conclusions about the data-generating process under study. I think of data science as “statistics plus.” Data scientists need to use the methods of statistics for analyzing data, but data scientists also work with messy data that come in a lot of different forms. This requires extra facility with computer science to transform data into forms that can be analyzed with traditional statistical methods. I also think data science is more closely associated with some methods which didn’t clearly originate from classical statistics, such as data mining and machine learning, though lots of folks in statistics training pathways have the option of learning and specializing in these topics in the present day.\n-I view myself as having more of a statistics focus. My interest in statistics developed from my career in medicine. Medicine does have a lot of structured data, so it is one of the domains where classical statistics plays an important role and hasn’t necessarily been incorporated under the data science umbrella. I also have more interest in the mathematical theory of data analysis methods than the practical aspects of working with massive (and possibly unstructured) data sets."
+  },
+  {
+    "objectID": "quarto.hw1.html#required-r-code",
+    "href": "quarto.hw1.html#required-r-code",
+    "title": "Data Science Reflections and Practice",
+    "section": "Required R Code",
+    "text": "Required R Code\nFor the first step, I will copy the provided code into a code chunk.\n\ny &lt;- density(iris$Petal.Width)\n\nNext, I will create R code chunks to determine the class, type, and structure of the object y.\n\nclass(y)\n\n[1] \"density\"\n\ntypeof(y)\n\n[1] \"list\"\n\nstr(y)\n\nList of 8\n $ x         : num [1:512] -0.656 -0.648 -0.64 -0.633 -0.625 ...\n $ y         : num [1:512] 0.00161 0.00178 0.00197 0.00217 0.00239 ...\n $ bw        : num 0.252\n $ n         : int 150\n $ old.coords: logi FALSE\n $ call      : language density.default(x = iris$Petal.Width)\n $ data.name : chr \"iris$Petal.Width\"\n $ has.na    : logi FALSE\n - attr(*, \"class\")= chr \"density\"\n\n\nFinally, I will call the plot function on the object y, but I will hide the code and show only the output."
+  }
+]

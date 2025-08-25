@@ -1,26 +1,38 @@
 ---
-title: "rabe.data.science"
+title: "Data Science Reflections and Practice"
 format: html
 editor: visual
+editor_options: 
+  chunk_output_type: console
 ---
 
-## Quarto
+## Reflections on Data Science
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+-I think that being a data scientist is about taking data in various forms and using methods from computer science and statistics to structure and analyze the data to provide insights into the data-generating process under study.
 
-## Running Code
+-Both data scientists and statisticians analyze data using a variety of tools to try to draw conclusions about the data-generating process under study. I think of data science as "statistics plus." Data scientists need to use the methods of statistics for analyzing data, but data scientists also work with messy data that come in a lot of different forms. This requires extra facility with computer science to transform data into forms that can be analyzed with traditional statistical methods. I also think data science is more closely associated with some methods which didn't clearly originate from classical statistics, such as data mining and machine learning, though lots of folks in statistics training pathways have the option of learning and specializing in these topics in the present day.
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+-I view myself as having more of a statistics focus. My interest in statistics developed from my career in medicine. Medicine does have a lot of structured data, so it is one of the domains where classical statistics plays an important role and hasn't necessarily been incorporated under the data science umbrella. I also have more interest in the mathematical theory of data analysis methods than the practical aspects of working with massive (and possibly unstructured) data sets.
+
+## Required R Code
+
+For the first step, I will copy the provided code into a code chunk.
 
 ```{r}
-1 + 1
+y <- density(iris$Petal.Width)
 ```
 
-You can add options to executable code like this
+Next, I will create R code chunks to determine the class, type, and structure of the object y.
+
+```{r}
+class(y)
+typeof(y)
+str(y)
+```
+
+Finally, I will call the plot function on the object y, but I will hide the code and show only the output.
 
 ```{r}
 #| echo: false
-2 * 2
+plot(y)
 ```
-
-The `echo: false` option disables the printing of code (only output is displayed).
